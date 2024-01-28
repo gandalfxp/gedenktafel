@@ -1,0 +1,60 @@
+div#popupWrapper {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 100dvh;
+
+    display: none; /* flex when activated */
+    align-items: center;
+    justify-content: center;
+}
+
+div#popupWrapper > div#popup {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 50%;
+
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: "Cinzel";
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+div#popupWrapper > div#popup > div#titlebar {
+    display: inline-flex;
+    width: 100%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#popupWrapper > div#popup > div#titlebar > span#name {
+    font-size: larger;
+}
+
+div#popupWrapper > div#popup > div#titlebar > i:hover {
+    cursor: pointer;
+}
+
+div#popupWrapper > div#popup > div#content {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+div#popupWrapper > div#popup > div#content > div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#popup #note {
+    font-size: small;
+}

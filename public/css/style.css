@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+
+    font-family: "Cinzel";
+    user-select: none;
+}
+
+div#names {
+    width: 100vw;
+    height: 100dvh;
+
+    word-break: break-all;
+    word-wrap: break-word;
+
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: url(https://bit.ly/4bbn33J);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+div#names > span {
+    cursor: default;
+    transition: 1000ms;
+}
+
+div#names > span:hover {
+    transition: 50ms;
+    color: white;
+}
